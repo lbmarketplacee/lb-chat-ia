@@ -179,7 +179,7 @@ export default async function handler(req, res) {
       const r = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + chave },
-        body: JSON.stringify({ model: 'gpt-5.6-luna', messages: historico, tools: FERRAMENTAS, temperature: 0.4 })
+        body: JSON.stringify({ model: 'gpt-5.6-luna', messages: historico, tools: FERRAMENTAS, temperature: 0.4, reasoning_effort: 'none' })
       });
 
       if (!r.ok) {
