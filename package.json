@@ -1,0 +1,9 @@
+{
+  "name": "lb-chat-ia",
+  "version": "1.0.0",
+  "description": "Assistente de IA interno da LB Marketplace, com acesso a dados reais do sistema",
+  "private": true,
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}
